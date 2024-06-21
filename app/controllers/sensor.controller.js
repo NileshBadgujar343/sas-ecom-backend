@@ -930,6 +930,9 @@ exports.products = (req, res) => {
     if (err) {
       res.status(404).json({ error: 'Category not found' });
     }
+    // if (!categoryRows || categoryRows.length === 0) {
+    //   return res.status(404).json({ error: 'Category not found1' });
+    // }
     const categoryId = categoryRows[0].id;
     console.log(categoryId);
 
@@ -940,7 +943,6 @@ exports.products = (req, res) => {
     });
   });
 
-  
 };
 
 exports.store = (req, res) => {

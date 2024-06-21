@@ -32,7 +32,13 @@ const userData = {
 };
 
 // enable CORS
-app.use(cors());
+app.use(cors(
+  {
+  origin:["https://react-deploy-vercel-peach-rho.vercel.app"],
+  methods:["POST","GET"],
+  credentials: true
+  }
+));
 // parse application/json
 app.use(bodyParser.json());
 // parse application/x-www-form-urlencoded

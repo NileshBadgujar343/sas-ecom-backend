@@ -35,8 +35,7 @@ const userData = {
 app.use(cors(
   {
   origin:["https://react-deploy-vercel-peach-rho.vercel.app"],
-  methods:["POST","GET"],
-  credentials: true
+  optionsSuccessStatus: 200
   }
 ));
 // parse application/json

@@ -4,3 +4,4 @@ module.exports = {
     PASSWORD: "MySQL3307",
     DB: "ecom"
   };
+   
